@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
+    <title>Kevin Ho | Software Engineer</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        id="navbar"
+        class="navbar fixed-top navbar-light navbar-expand-md bg-light"
+        style="z-index:3;"
+      >
+        <a class="navbar-brand">
+          <div>
+            <img
+              class="kh-logo"
+              src="./brand.png"
+              width="75"
+              height="40"
+              alt="KH Logo"
+            />
+          </div>
+        </a>
+        <button
+          class="navbar-toggler ml-1"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsingNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse collapse"
+          id="collapsingNavbar"
+          style="margin-right: 15px"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item text-center">
+              <a
+                id="home-nav"
+                class="nav-link"
+                href="#home"
+                onClick="window.scrollTo(0, 0);"
+              >
+                Home</a
+              >
+            </li>
+            <li class="nav-item text-center">
+              <a
+                id="about-nav"
+                class="nav-link"
+                href="#about"
+                onClick="document.getElementById('about').scrollIntoView();"
+              >
+                About</a
+              >
+            </li>
+            <li class="nav-item text-center">
+              <a
+                id="projects-nav"
+                class="nav-link"
+                href="#projects"
+                onClick="document.getElementById('projects').scrollIntoView();"
+              >
+                Projects</a
+              >
+            </li>
+            <li class="nav-item text-center">
+              <a
+                id="internetandwebprogramming-nav"
+                class="nav-link"
+                href="#internetandwebprogramming"
+                onClick="document.getElementById('internetandwebprogramming').scrollIntoView();"
+              >
+                Internet and Web Programming</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="title" style="text-align:center;">
+        <h1><strong>KEVIN</strong> HO</h1>
+        <h5>Software Engineer</h5>
+        <div>
+          <ul style="display:inline-block;">
+            <li>
+              <a target="_blank" href="https://github.com/kevinho6"
+                ><img class="icon" src="./github.svg"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/kevinho6/"
+                ><img class="icon" src="./linkedin.png"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="./resume.pdf"
+                ><img class="icon" src="./resume.png"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="about" class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6" style="padding:25px;">
+            <strong>Kevin</strong> was born and raised in New York City. He is
+            currently studying Computer Science at Fordham University and has
+            interned at BlackRock. He is also a graduate of the Fullstack
+            Academy of Code. He has always had a passion for computers and is
+            now pursing his dream of becoming a software engineer.
+          </div>
+          <div class="col-md-6" style="padding:25px;">
+            <img class="img-fluid" src="./bio_image.jpg" />
+          </div>
+        </div>
+      </div>
+      <div id="projects">
+        <div id="projects-row" class="row no-gutters h-100">
+          <div class="col project h-100" style="display:flex;">
+            <div class="mx-auto my-auto">
+              <a
+                href="http://ripe-apples.com"
+                target="_blank"
+                style="text-decoration:none;color:inherit;"
+                ><div>Ripe Apples</div>
+                <div class="small-font">FOOD</div></a
+              >
+            </div>
+          </div>
+          <div class="col project h-100" style="display:flex;">
+            <div class="mx-auto my-auto">
+              <a
+                href="http://rickandmortystore.herokuapp.com/"
+                target="_blank"
+                style="text-decoration:none;color:inherit;"
+                >The Rick and Morty Store
+                <div class="small-font">E-COMMERCE</div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <br />
+        <h1 id="internetandwebprogramming" style="text-align:center;">
+          Internet and Web Programming
+        </h1>
+        <hr />
+        <div class="row align-items-center justify-content-center">
+          <ul class="list-group" style="margin:25px;">
+            <a
+              href="http://storm.cis.fordham.edu/~kevinho/internet_and_web_programming/assignment1/"
+              target="_blank"
+              class="list-group-item list-group-item-action text-center"
+            >
+              Assignment 1
+            </a>
+
+            <a
+              href="http://storm.cis.fordham.edu/~kevinho/internet_and_web_programming/assignment2/"
+              target="_blank"
+              class="list-group-item list-group-item-action text-center"
+            >
+              Assignment 2
+            </a>
+
+            <a
+              href="http://storm.cis.fordham.edu/~kevinho/internet_and_web_programming/assignment3/"
+              target="_blank"
+              class="list-group-item list-group-item-action text-center"
+            >
+              Assignment 3
+            </a>
+            <a
+              href="http://storm.cis.fordham.edu/~kevinho/internet_and_web_programming/assignment4/"
+              target="_blank"
+              class="list-group-item list-group-item-action text-center"
+            >
+              Assignment 4
+            </a>
+            <a
+              href="http://storm.cis.fordham.edu/~kevinho/internet_and_web_programming/assignment5/"
+              target="_blank"
+              class="list-group-item list-group-item-action text-center"
+            >
+              Assignment 5
+            </a>
+            <a
+              href="http://storm.cis.fordham.edu/~kevinho/internet_and_web_programming/assignment6"
+              target="_blank"
+              class="list-group-item list-group-item-action text-center active"
+            >
+              Assignment 6
+            </a>
+            <a
+              href="https://hailtokale.herokuapp.com/#/"
+              target="_blank"
+              class="list-group-item list-group-item-action text-center"
+            >
+              Midterm
+            </a>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item">
+              A website containing my response to
+              <i
+                ><a
+                  href="http://www.cs.uu.nl/docs/vakken/b1iuw/materiaal/lit/Long%20Live%20the%20Web%20-%20A%20Call%20for%20Continued%20Open%20Standards%20and%20Neutrality.pdf"
+                  >Long Live the Web</a
+                ></i
+              >
+            </li>
+            <li class="list-group-item">
+              The previous assignment styled with CSS
+            </li>
+            <li class="list-group-item">
+              A website using text and images in response to chapters 2 and 6 of
+              <i
+                ><a
+                  href="https://elearning.shisu.edu.cn/pluginfile.php/68463/mod_resource/content/0/Understanding%20Comics.pdf"
+                  >Understanding Comics</a
+                ></i
+              >
+            </li>
+            <li class="list-group-item">
+              A responsive website created by following this
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images"
+                >tutorial</a
+              >
+            </li>
+            <li class="list-group-item">
+              A website containing animations
+            </li>
+            <li class="list-group-item">
+              A website containing the concept, sitemap and wireframes for my
+              midterm project
+            </li>
+            <li class="list-group-item">
+              A food blog for my sister
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <span
+            >Website by:
+            <strong>
+              Kevin Ho<span class="blinking-cursor">|</span></strong
+            ></span
+          >
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function() {
+        var navPos = $('#navbar').offset().top;
+        var aboutPos = $('#about').offset().top;
+        var projectsPos = $('#projects').offset().top;
+        var inetPos = $('#internetandwebprogramming').offset().top;
+        $(window).scroll(function() {
+          let windowPos = $(this).scrollTop();
+
+          if (windowPos >= inetPos) {
+            $('#projects-nav').removeClass('active');
+            $('#internetandwebprogramming-nav').addClass('active');
+          } else if (windowPos >= projectsPos) {
+            $('#about-nav').removeClass('active');
+            $('#projects-nav').addClass('active');
+            $('#internetandwebprogramming-nav').removeClass('active');
+          } else if (windowPos >= aboutPos) {
+            $('#home-nav').removeClass('active');
+            $('#about-nav').addClass('active');
+            $('#projects-nav').removeClass('active');
+          } else {
+            $('#home-nav').addClass('active');
+            $('#about-nav').removeClass('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
