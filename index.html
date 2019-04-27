@@ -218,9 +218,23 @@
             <a
               href="https://storm.cis.fordham.edu/~kevinho/internet_and_web_programming/frontendbackend/Text%20to%20Emoji.zip"
               target="_blank"
-              class="list-group-item list-group-item-action text-center active"
+              class="list-group-item list-group-item-action text-center"
             >
               Frontend + Backend
+            </a>
+            <a
+              href="https://storm.cis.fordham.edu/~kevinho/internet_and_web_programming/final_project_proposal"
+              target="_blank"
+              class="list-group-item list-group-item-action text-center active"
+            >
+              Final Project Proposal
+            </a>
+            <a
+              href="https://storm.cis.fordham.edu/~kevinho/internet_and_web_programming/"
+              target="_blank"
+              class="list-group-item list-group-item-action text-center"
+            >
+              Final Project
             </a>
           </ul>
           <ul class="list-group">
@@ -265,6 +279,12 @@
             <li class="list-group-item">
               Text to Emoji Translation
             </li>
+            <li class="list-group-item">
+              Tic Tac Toe Proposal
+            </li>
+            <li class="list-group-item">
+              Tic Tac Toe with AI
+            </li>
           </ul>
         </div>
       </div>
@@ -304,23 +324,37 @@
         var aboutPos = $('#about').offset().top;
         var projectsPos = $('#projects').offset().top;
         var inetPos = $('#internetandwebprogramming').offset().top;
-        $(window).scroll(function() {
-          let windowPos = $(this).scrollTop();
 
-          if (windowPos >= inetPos) {
-            $('#projects-nav').removeClass('active');
+        // When the page is loaded highlight the active class
+        let windowPos = $(this).scrollTop();
+        $('.navbar-nav')
+          .find('li > a.active')
+          .removeClass('active');
+
+        if (windowPos >= inetPos - 75) {
+          $('#internetandwebprogramming-nav').addClass('active');
+        } else if (windowPos >= projectsPos - 50) {
+          $('#projects-nav').addClass('active');
+        } else if (windowPos >= aboutPos - 50) {
+          $('#about-nav').addClass('active');
+        } else {
+          $('#home-nav').addClass('active');
+        }
+
+        $(window).scroll(function() {
+          windowPos = $(this).scrollTop();
+          $('.navbar-nav')
+            .find('li > a.active')
+            .removeClass('active');
+
+          if (windowPos >= inetPos - 75) {
             $('#internetandwebprogramming-nav').addClass('active');
-          } else if (windowPos >= projectsPos) {
-            $('#about-nav').removeClass('active');
+          } else if (windowPos >= projectsPos - 50) {
             $('#projects-nav').addClass('active');
-            $('#internetandwebprogramming-nav').removeClass('active');
-          } else if (windowPos >= aboutPos) {
-            $('#home-nav').removeClass('active');
+          } else if (windowPos >= aboutPos - 50) {
             $('#about-nav').addClass('active');
-            $('#projects-nav').removeClass('active');
           } else {
             $('#home-nav').addClass('active');
-            $('#about-nav').removeClass('active');
           }
         });
       });
